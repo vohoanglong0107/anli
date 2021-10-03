@@ -150,6 +150,15 @@ MODEL_CLASSES = {
         "padding_att_value": 0,
         "internal_model_name": "electra",
         'insight_supported': True,
+    },
+
+    "MiniLM-L6": {
+        "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+        "tokenizer": BertTokenizer,
+        "sequence_classification": BertForSequenceClassification,
+        "padding_segement_value": 0,
+        "padding_att_value": 0,
+        "do_lower_case": True,
     }
 }
 
