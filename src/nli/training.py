@@ -17,7 +17,7 @@ from transformers import BartTokenizer, BartForSequenceClassification
 from transformers import ElectraTokenizer, ElectraForSequenceClassification
 
 from torch.utils.data import Dataset, DataLoader, DistributedSampler, RandomSampler, SequentialSampler
-from .. import config
+import config
 from transformers import AdamW
 from transformers import get_linear_schedule_with_warmup
 from ..flint.data_utils.batchbuilder import BaseBatchBuilder, move_to_device
