@@ -17,12 +17,12 @@ from transformers import BartTokenizer, BartForSequenceClassification
 from transformers import ElectraTokenizer, ElectraForSequenceClassification
 
 from torch.utils.data import Dataset, DataLoader, DistributedSampler, RandomSampler, SequentialSampler
-import config
+from .. import config
 from transformers import AdamW
 from transformers import get_linear_schedule_with_warmup
-from flint.data_utils.batchbuilder import BaseBatchBuilder, move_to_device
-from flint.data_utils.fields import RawFlintField, LabelFlintField, ArrayIndexFlintField
-from utils import common, list_dict_data_tool, save_tool
+from ..flint.data_utils.batchbuilder import BaseBatchBuilder, move_to_device
+from ..flint.data_utils.fields import RawFlintField, LabelFlintField, ArrayIndexFlintField
+from ..utils import common, list_dict_data_tool, save_tool
 import os
 import torch.multiprocessing as mp
 import torch.distributed as dist

@@ -3,12 +3,8 @@
 # This source code is licensed under Creative Commons-Non Commercial 4.0 found in the
 # LICENSE file in the root directory of this source tree.
 
-from utils import common
 from typing import List, Dict
-from tqdm import tqdm
 from collections import defaultdict
-import config
-from pathlib import Path
 
 
 smnli_label2std_label = defaultdict(lambda: "o")  # o stands for all other label that is invalid.

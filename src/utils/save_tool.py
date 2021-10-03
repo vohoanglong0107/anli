@@ -6,10 +6,10 @@
 import os
 from pathlib import Path
 
-import config
+from .. import config
 from datetime import datetime
 
-from utils import common
+from . import common
 
 
 class ScoreLogger(object):

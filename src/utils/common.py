@@ -6,7 +6,7 @@
 import json
 from json import JSONEncoder
 from tqdm import tqdm
-import config
+from .. import config
 
 
 registered_jsonabl_classes = {}

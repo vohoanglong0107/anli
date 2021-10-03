@@ -4,9 +4,9 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
-from typing import Dict, Type
+from typing import Dict
 
-from flint.data_utils.fields import FlintField, RawFlintField
+from .fields import FlintField, RawFlintField
 
 
 class BaseBatchBuilder(object):

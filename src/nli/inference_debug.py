@@ -9,11 +9,9 @@ import uuid
 import numpy as np
 
 import config
-from flint.data_utils.batchbuilder import move_to_device
-from flint.data_utils.fields import RawFlintField, LabelFlintField, ArrayIndexFlintField
-from utils import common, list_dict_data_tool, save_tool
-from nli.training import MODEL_CLASSES, registered_path, build_eval_dataset_loader_and_sampler, NLITransform, \
-    NLIDataset, count_acc, evaluation_dataset, eval_model
+from ..flint.data_utils.batchbuilder import move_to_device
+from ..flint.data_utils.fields import RawFlintField, LabelFlintField, ArrayIndexFlintField
+from .training import MODEL_CLASSES, build_eval_dataset_loader_and_sampler, NLITransform, eval_model
 
 import torch
 

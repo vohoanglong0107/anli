@@ -5,9 +5,9 @@
 
 from pathlib import Path
 
-import config
-from dataset_tools.format_convert import sm_nli2std_format, fever_nli2std_format, a_nli2std_format
-from utils import common
+from .. import config
+from .format_convert import sm_nli2std_format, fever_nli2std_format, a_nli2std_format
+from ..utils import common
 
 # ANLI_VERSION = 1.0
 
