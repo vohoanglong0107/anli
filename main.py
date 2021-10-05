@@ -1,7 +1,10 @@
 import argparse
 import os
+import logging
+from datetime import datetime
 
 import torch.multiprocessing as mp
+import transformers
 
 from src.nli.training import train
 
@@ -200,4 +203,5 @@ def main():
 
 
 if __name__ == "__main__":
+    transformers.logging.set_verbosity_error()
     main()

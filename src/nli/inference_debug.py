@@ -4,11 +4,10 @@
 # LICENSE file in the root directory of this source tree.
 
 import argparse
-from pathlib import Path
 import uuid
 import numpy as np
 
-import config
+from .. import config
 from ..flint.data_utils.batchbuilder import move_to_device
 from ..flint.data_utils.fields import RawFlintField, LabelFlintField, ArrayIndexFlintField
 from .training import MODEL_CLASSES, build_eval_dataset_loader_and_sampler, NLITransform, eval_model
